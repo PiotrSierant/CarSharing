@@ -67,7 +67,7 @@ a:not([class]) {
     overflow: hidden;
 }
 .page-header {
-    background-image: url("../images/image.png");
+    background-image: url("images/image.png");
     background-size: cover;
     background-position: center center;
     width: 100%;
