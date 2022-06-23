@@ -391,6 +391,7 @@ textarea {
     flex-shrink: 0;
     cursor: pointer;
     margin-right: 10px;
+    border-radius: 8px;
 }
 .checkbox input:checked + span {
 
