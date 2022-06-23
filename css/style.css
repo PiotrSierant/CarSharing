@@ -61,7 +61,7 @@ a:not([class]) {
     color: var(--base-color-one);
 }
 .container {
-    max-width: 1080px;
+    min-width: 1080px;
 }
 .hidden {
     overflow: hidden;
@@ -70,6 +70,7 @@ a:not([class]) {
     background-image: url("../images/image.png");
     background-size: cover;
     background-position: center center;
+    background-color: #28272C;
     width: 100%;
     height: calc(100% - 27px);
     display: flex;
