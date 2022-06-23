@@ -151,3 +151,28 @@ a:not([class]) {
     font-weight: var(--font-weight-black);
     font-size: var(--font-size-h1);
 }
+.page-header-description {
+    font-size: var(--font-size-p);
+    font-weight: var(--font-weight-bold);
+    margin-top: 10px;
+    margin-bottom: 54px;
+}
+.page-header-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+.page-header-btn-link {
+    padding: 22px 55px;
+    background-color: var(--base-color-one);
+    border-radius: 1000px;
+    text-decoration: none;
+    font-size: var(--font-size-p);
+    font-weight: var(--font-weight-bold);
+    color: var(--base-color-two);
+}
+.page-header-btn-link:nth-child(2) {
+    background-color: var(--base-color-two);
+    color: var(--base-color-one);
+}
