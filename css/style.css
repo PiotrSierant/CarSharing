@@ -56,6 +56,7 @@ a:not([class]) {
     --font-size-p-small: 14px ;
     --font-size-button: 16px;
     --font-size-form: 10px;
+    --font-size-copy: 12px;
     /*font weight*/
     --font-weight-black: 900;
     --font-weight-extra-bold: 800;
@@ -442,9 +443,51 @@ input:focus, textarea:focus, .button {
 }
 .footer-logo {
     display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top: 40px;
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-footer-logo);
+    color: var(--base-color-two);
+    text-decoration: none;
+    gap: 7px;
+    margin-bottom: 22px;
 }
 .footer-img {
     width: 16px;
     height: 19px;
+}
+.footer-logo-font {
+    font-weight: var(--font-weight-extra-bold);
+}
+.footer-menu {
+    width: 100%;
+    gap: 140px;
+}
+.footer-menu, .footer-menu-part1, .footer-menu-part2 {
+    display: flex;
+    justify-content: space-between;
+}
+.footer-menu-part1, .footer-menu-part2 {
+    flex-direction: column;
+}
+.footer-menu-link {
+    font-size: var(--font-size-p-small);
+    font-weight: var(--font-weight-bold);
+    color: var(--base-color-two);
+    text-decoration: none;
+    margin-bottom: 7px;
+}
+.footer-menu-part1 .footer-menu-link:nth-child(1) {
+    color: var(--base-color-one);
+}
+.footer-menu span {
+    flex-grow: 1;
+    text-align: right;
+    align-self: flex-end;
+}
+.footer-menu-copy {
+    font-size: var(--font-size-copy);
+    font-weight: var(--font-weight-light);
+    color: var(--checkbox-color);
 }
