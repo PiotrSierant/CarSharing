@@ -46,6 +46,7 @@ a:not([class]) {
     --font-size-nav-logo: 35px;
     --font-size-nav-menu: 16px;
     --font-size-h1: 90px;
+    --font-size-h2: 35px;
     --font-size-p: 16px;
     --font-size-button: 16px;
     /*font weight*/
@@ -74,7 +75,7 @@ a:not([class]) {
     background-position: center center;
     background-color: #28272C;
     width: 100%;
-    height: calc(100% - 27px);
+    height: 807px; /* calc(100% - 27px)*/
     display: flex;
     justify-content: center;
     align-self: center;
@@ -183,15 +184,16 @@ a:not([class]) {
     height: 27px;
     background-color: white;
     position: relative;
+    margin-bottom: 65px;
 }
-.arrow img {
-    width: 20px;
-    height: 20px;
+.page-header-down img {
+    width: 55px;
+    height: 55px;
 }
 .arrow {
     position: absolute;
-    width: 55px;
-    height: 55px;
+    width: 21px;
+    height: 21px;
     top: -28px;
     left: 50%;
     background-color: red;
@@ -200,4 +202,36 @@ a:not([class]) {
     padding: 17px;
     transform: translateX(-50%);
     box-shadow: 0 3px 6px var(--shadow-color);
+}
+.blog {
+    display: flex;
+    justify-content: center;
+}
+.blog .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.title-section {
+    font-size: var(--font-size-h2);
+    font-weight: var(--font-weight-bold);
+    position: relative;
+    padding: 0 3px;
+    margin-bottom: 35px;
+}
+.title-section::after, .title-section::before {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 3px;
+    background-color: var(--base-color-one);
+}
+.title-section::after {
+    top: 50%;
+    right: -50%;
+}
+.title-section::before {
+    top: 50%;
+    left: -50%;
 }
