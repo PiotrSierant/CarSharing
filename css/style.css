@@ -56,6 +56,8 @@ a:not([class]) {
     --font-weight-regular: 400;
     --font-weight-light: 300;
     --font-weight-extra-light: 200;
+    /* shadow color */
+    --shadow-color: #FF00004D;
 }
 .🔴 {
     color: var(--base-color-one);
@@ -175,4 +177,27 @@ a:not([class]) {
 .page-header-btn-link:nth-child(2) {
     background-color: var(--base-color-two);
     color: var(--base-color-one);
+}
+.page-header-down {
+    width: 100%;
+    height: 27px;
+    background-color: white;
+    position: relative;
+}
+.arrow img {
+    width: 20px;
+    height: 20px;
+}
+.arrow {
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    top: -28px;
+    left: 50%;
+    background-color: red;
+    fill: #FF0000;
+    border-radius: 50%;
+    padding: 17px;
+    transform: translateX(-50%);
+    box-shadow: 0 3px 6px var(--shadow-color);
 }
