@@ -208,6 +208,21 @@ a:not([class]) {
     transform: translateX(-50%);
     box-shadow: 0 3px 6px var(--shadow-color);
 }
+.title-section-contact::after, .title-section-contact::before, .title-section::after, .title-section::before, .title-section-service::after, .title-section-service::before {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 3px;
+    background-color: var(--base-color-one);
+}
+.title-section::after, .title-section-service::after, .title-section-contact::after {
+    top: 50%;
+    right: -50px;
+}
+.title-section::before,.title-section-service::before, .title-section-contact::before  {
+    top: 50%;
+    left: -50px;
+}
 .blog {
     display: flex;
     justify-content: center;
@@ -224,21 +239,6 @@ a:not([class]) {
     position: relative;
     padding: 0 3px;
     margin-bottom: 35px;
-}
-.title-section::after, .title-section::before {
-    content: '';
-    position: absolute;
-    width: 50px;
-    height: 3px;
-    background-color: var(--base-color-one);
-}
-.title-section::after {
-    top: 50%;
-    right: -50px;
-}
-.title-section::before {
-    top: 50%;
-    left: -50px;
 }
 .container_box {
     display: flex;
@@ -257,14 +257,14 @@ a:not([class]) {
 .blog-title, .service-title {
     text-transform: uppercase;
     font-size: var(--font-size-h3);
-    color: var(--base-color-blog);
     font-weight: var(--font-weight-regular);
+    color: var(--base-color-blog);
     margin-bottom: 15px;
 }
 .blog-description {
     font-family: var(--font-family-2);
-    font-weight: var(--font-weight-light);
     font-size: var(--font-size-p-small);
+    font-weight: var(--font-weight-light);
     margin-bottom: 26px;
 }
 .blog-link, .service-link {
@@ -294,26 +294,11 @@ a:not([class]) {
 .title-section-service {
     font-size: var(--font-size-h2);
     font-weight: var(--font-weight-bold);
+    color: var(--base-color-two);
     position: relative;
     padding: 0 10px;
     margin-bottom: 75px;
     margin-top: 60px;
-    color: var(--base-color-two);
-}
-.title-section-service::after, .title-section-service::before {
-    content: '';
-    position: absolute;
-    width: 50px;
-    height: 3px;
-    background-color: var(--base-color-one);
-}
-.title-section-service::after {
-    top: 50%;
-    right: -50px;
-}
-.title-section-service::before {
-    top: 50%;
-    left: -50px;
 }
 .service-box {
     display: flex;
@@ -334,4 +319,45 @@ a:not([class]) {
     color: var(--base-color-two);
     text-align: center;
     margin-bottom: 26px;
+}
+.service .container_box {
+    gap: 45px;
+}
+.contact .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.title-section-contact {
+    font-size: var(--font-size-h2);
+    font-weight: var(--font-weight-bold);
+    position: relative;
+    padding: 0 10px;
+    margin-top: 60px;
+    margin-bottom: 35px;
+}
+.contact .container_box {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 65px;
+}
+.contact .container_box form {
+    display: flex;
+    flex-direction: column;
+}
+.form_image {
+    width: 444px;
+    height: 316px;
+}
+input, textarea {
+    width: 444px;
+    padding: 12px 8px;
+}
+textarea {
+    resize: none;
+    height: 140px;
+}
+::placeholder {
+    font-size: var(--font-size-p-big);
 }
